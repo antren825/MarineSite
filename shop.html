@@ -498,12 +498,12 @@
 
     <script>
         const products = [
-            { id: 1, name: "Fusion MS-RA70 Marine Stereo", category: "Audio", brand: "Fusion", price: 289.99, image: "https://images.crutchfieldonline.com/ImageHandler/trim/869/652/products/2017/13/917/g917RA70i-B-1.jpg", desc: "Fusion's sleekest value-packed marine stereo.", features: ["A2DP Bluetooth", "IPX7 Water Resistant", "Multi-Zone Technology"], new: true },
-            { id: 2, name: "Garmin GPSMAP 8610xsv", category: "Navigation", brand: "Garmin", price: 2699.99, image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=500&q=60", desc: "10-inch Chartplotter/Sonar Combo.", features: ["10-inch HD IPS Display", "Built-in Sonar Support", "Preloaded Maps"], new: true },
-            { id: 3, name: "Icom M330 Fixed VHF", category: "Communication", brand: "Icom", price: 159.99, image: "https://images.unsplash.com/photo-1600446748236-09252327464c?auto=format&fit=crop&w=500&q=60", desc: "Compact VHF radio with Class D DSC.", features: ["Compact Body", "Class D DSC", "AquaQuake Draining"], new: false },
-            { id: 4, name: "Simrad TP10 Tiller Pilot", category: "Navigation", brand: "Simrad", price: 449.00, image: "https://images.unsplash.com/photo-1566847438217-76e82d383f84?auto=format&fit=crop&w=500&q=60", desc: "Reliable autopilot for tiller-steered sailboats.", features: ["Easy Operation", "Precision Steering", "Weatherproof"], new: false },
-            { id: 5, name: "Raymarine Quantum Radar", category: "Navigation", brand: "Raymarine", price: 1749.99, image: "https://images.unsplash.com/photo-1517427677506-ade074eb1432?auto=format&fit=crop&w=500&q=60", desc: "CHIRP Pulse Compression Wi-Fi Radar.", features: ["Superior Imaging", "Wi-Fi Connection", "Low Power Consumption"], new: false },
-            { id: 6, name: "Lumitec SeaBlazeX2 Lights", category: "Lighting", brand: "Lumitec", price: 399.99, image: "https://images.unsplash.com/photo-1559827291-72ee739d0d9a?auto=format&fit=crop&w=500&q=60", desc: "Underwater LED lights with full-color RGBW spectrum.", features: ["6000 Lumens", "Full Color RGBW", "Bronze Housing"], new: false }
+            { id: 1, name: "Fusion MS-RA70 Marine Stereo", category: "Audio", brand: "Fusion", price: 289.99, desc: "Fusion's sleekest value-packed marine stereo.", features: ["A2DP Bluetooth", "IPX7 Water Resistant", "Multi-Zone Technology"], new: true },
+            { id: 2, name: "Garmin GPSMAP 8610xsv", category: "Navigation", brand: "Garmin", price: 2699.99, desc: "10-inch Chartplotter/Sonar Combo.", features: ["10-inch HD IPS Display", "Built-in Sonar Support", "Preloaded Maps"], new: true },
+            { id: 3, name: "Icom M330 Fixed VHF", category: "Communication", brand: "Icom", price: 159.99, desc: "Compact VHF radio with Class D DSC.", features: ["Compact Body", "Class D DSC", "AquaQuake Draining"], new: false },
+            { id: 4, name: "Simrad TP10 Tiller Pilot", category: "Navigation", brand: "Simrad", price: 449.00, desc: "Reliable autopilot for tiller-steered sailboats.", features: ["Easy Operation", "Precision Steering", "Weatherproof"], new: false },
+            { id: 5, name: "Raymarine Quantum Radar", category: "Navigation", brand: "Raymarine", price: 1749.99, desc: "CHIRP Pulse Compression Wi-Fi Radar.", features: ["Superior Imaging", "Wi-Fi Connection", "Low Power Consumption"], new: false },
+            { id: 6, name: "Lumitec SeaBlazeX2 Lights", category: "Lighting", brand: "Lumitec", price: 399.99, desc: "Underwater LED lights with full-color RGBW spectrum.", features: ["6000 Lumens", "Full Color RGBW", "Bronze Housing"], new: false }
         ];
 
         let cart = JSON.parse(localStorage.getItem('kb_cart')) || [];
@@ -630,4 +630,5 @@
         }
     </script>
 </body>
+
 </html>
