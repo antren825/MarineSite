@@ -519,7 +519,7 @@
             grid.innerHTML = productsToRender.map((p, index) => `
                 <div class="product-card">
                     ${p.new ? '<span class="badge-new">New Arrival</span>' : ''}
-                    <div class="product-image" style="background-image: url('${p.image}');" onclick="openProductModal(${p.id})">
+                    <div class="product-image" onclick="openProductModal(${p.id})">
                         <button class="quick-add-btn" onclick="event.stopPropagation(); addToCart(${p.id})">Quick Add +</button>
                     </div>
                     <div class="product-info" onclick="openProductModal(${p.id})" style="cursor:pointer;">
@@ -543,7 +543,7 @@
             let total = 0;
             container.innerHTML = cart.map((item, index) => {
                 total += item.price;
-                return `<div class="cart-item"><img src="${item.image}" alt="${item.name}"><div class="cart-item-details"><h4>${item.name}</h4><div style="color: var(--primary-color); font-weight:bold;">$${item.price.toFixed(2)}</div><small style="color:red; cursor:pointer;" onclick="removeFromCart(${index})">Remove</small></div></div>`;
+                return `<div class="cart-item"><div class="cart-item-details"><h4>${item.name}</h4><div style="color: var(--primary-color); font-weight:bold;">$${item.price.toFixed(2)}</div><small style="color:red; cursor:pointer;" onclick="removeFromCart(${index})">Remove</small></div></div>`;
             }).join('');
             subtotalSpan.innerText = "$" + total.toFixed(2);
         }
@@ -630,5 +630,4 @@
         }
     </script>
 </body>
-
 </html>
